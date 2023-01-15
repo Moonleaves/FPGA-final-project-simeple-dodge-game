@@ -49,12 +49,12 @@ init變數控制每一次遊戲重新開始時，所需要的初始化，所以�
 		USER_SCORE <= USER_SCORE + 1;
 		else if(right && user[0] && !gameIsEnd)
 		USER_SCORE <= USER_SCORE + 1;
-	 end<br><br>
+	 end
 	 
 	 drop <= Count%256;//因為drop是8bit，每一個bit分別控制每一排是否掉落紅點，只要assign給drop一個隨機的數字就可以實現隨機掉落
 	 always @(posedge CLK) begin//隨機數字所需要的時間計數
 		Count<=Count + 1'b1;
-	 end<br><br>
+	 end
 	 
 	 //detect collision偵測碰撞，當紅燈和藍燈同時亮燈的時候，遊戲結束
 	for(int idx = 0;idx < 8; idx = idx + 1) begin
