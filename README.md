@@ -59,7 +59,7 @@ init變數控制每一次遊戲重新開始時，所需要的初始化，所以�
 	 //detect collision偵測碰撞，當紅燈和藍燈同時亮燈的時候，遊戲結束
 	for(int idx = 0;idx < 8; idx = idx + 1) begin
 		gameIsEnd <= !DATA_B[idx] && !DATA_R[idx];
-	end<br><br>
+	end
 #### Demo video: 
 
 <a href="https://drive.google.com/drive/folders/1vax_kr09RbKgWnHvMoZwPw7NJVomISRL?usp=sharing" title="Demo Video"><img src="https://github.com/Moonleaves/FPGA-final-project-simeple-dodge-game/blob/main/images/3027E902-0B3E-421C-B9CF-CE19174C01CE_1_102_o.jpeg" alt="Demo Video" width="500"/></a>
