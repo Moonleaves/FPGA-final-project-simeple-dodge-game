@@ -43,7 +43,7 @@ init變數控制每一次遊戲重新開始時，所需要的初始化，所以�
 	drop_8bit2 E7(enemys_drop[6], CLK, drop[6], init);<br>
 	drop_8bit2 E8(enemys_drop[7], CLK, drop[7], init);<br><br>
 
-	 always @(posedge CLK_div5) begin//如果使用者正在移動，則分數增加
+	 always @(posedge CLK_div5) begin//如果使用者是正在移動，則分數增加
 		if(!init) USER_SCORE <= 8'b0;
 		else if(left && user[7] && !gameIsEnd)
 		USER_SCORE <= USER_SCORE + 1;
@@ -51,7 +51,7 @@ init變數控制每一次遊戲重新開始時，所需要的初始化，所以�
 		USER_SCORE <= USER_SCORE + 1;
 	 end<br><br>
 	 
-	 drop <= Count%256;//因為drop控制每一排是否掉落紅點，只要assign給drop一個隨機的數字就可以實現隨機掉落
+	 drop <= Count%256;//因為drop是8bit，每一個bit分別控制每一排是否掉落紅點，只要assign給drop一個隨機的數字就可以實現隨機掉落
 	 always @(posedge CLK) begin//隨機數字所需要的時間計數
 		Count<=Count + 1'b1;
 	 end<br><br>
