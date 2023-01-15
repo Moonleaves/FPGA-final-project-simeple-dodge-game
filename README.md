@@ -2,7 +2,7 @@
 ### Authors: 107321057
 
 #### Input/Output unit:<br>
-* 8x8 LED 矩陣，用來顯示對戰畫面。下圖為按下 gameIsStart 的初始畫面。<br>
+* 8x8 LED 矩陣，用來顯示遊戲畫面。下圖為按下 gameIsStart 的初始畫面。<br>
 <img src="https://github.com/Moonleaves/FPGA-final-project-simeple-dodge-game/blob/main/images/IMG_9091.jpeg" width="300"/><br>
 * LED 陣列，用來計分。<br>
 <img src="https://github.com/Moonleaves/FPGA-final-project-simeple-dodge-game/blob/main/images/IMG_9093.jpeg" width="300"/><br>
