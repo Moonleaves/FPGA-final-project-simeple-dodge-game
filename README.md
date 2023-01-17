@@ -1,5 +1,5 @@
 # FPGA-final-project-simeple-dodge-game 
-### Authors: 107321057
+### Author: 107321057
 
 #### Input/Output unit:<br>
 * 8x8 LED 矩陣，用來顯示遊戲畫面。下圖為按下 gameIsStart 的初始畫面。<br>
